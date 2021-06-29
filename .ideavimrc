@@ -1,0 +1,10 @@
+" source ~/.vim/.commonrc
+
+let mapleader = " "
+
+set easymotion
+map <Leader> <Plug>(easymotion-prefix)
+set surround
+set commentary
+set exchange
+

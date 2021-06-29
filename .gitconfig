@@ -1,0 +1,58 @@
+[user]
+	name = Josh Cordell
+	email = joshua.cordell@rallyhealth.com
+
+[core]
+    editor = vim # Use your preferred editor here
+ 
+[color]
+    branch = auto
+    decorate = auto
+    diff = auto
+    grep = auto
+    interactive = auto
+    log = auto
+    showbranch = auto
+    status = auto
+    ui = auto
+ 
+[diff]
+    algorithm = patience
+    autoRefreshIndex = true
+    indentHeuristic = true
+    mnemonicprefix = true
+    renames = true
+ 
+[fetch]
+    recurseSubmodules = true
+ 
+[grep]
+    extendedRegexp = true
+ 
+[merge]
+    # ff = true
+    conflictstyle = diff3
+    verbosity = 3
+ 
+### OPTIONAL ALIASES ### Add these only if you want to
+[alias]
+    br = branch
+ 
+    # -a automatically adds any modified file as part of the commit
+    # --verbose shows the diff - https://stackoverflow.com/a/4750245/11889
+    ci = commit -a --verbose
+ 
+    co = checkout
+     
+    # shows each changed file on a single line
+    st = status -s -uno
+ 
+    # shows each changed file with each log commit
+    lg = log --stat --color
+
+    tree = log --color --graph --abbrev-commit --decorate --format=format:'%C(red bold)%h%C(reset) - %C(green)(%ar)%C(reset)%C(magenta)%d%C(reset) %C(yellow)%s%C(reset) %C(white)- %an%C(reset)'
+    dtree = log --color --graph --abbrev-commit --decorate --date=iso-local --format=format:'%C(red bold)%h%C(reset) - %C(green)(%ad)%C(reset)%C(magenta)%d%C(reset) %C(yellow)%s%C(reset) %C(white)- %an%C(reset)'
+[filesystem "Oracle Corporation|1.8.0_202-ea|/dev/disk1s1"]
+	timestampResolution = 1001 milliseconds
+	minRacyThreshold = 0 nanoseconds
+
